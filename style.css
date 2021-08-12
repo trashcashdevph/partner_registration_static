@@ -252,3 +252,170 @@ button {
   width: 400px;
   transform: translate(60px, -69px);
 }
+
+/*Media Queries*/
+/*Extra large screens, TV*/
+@media screen and (min-width: 1201px) {
+  .container {
+    height: 580px;
+  }
+}
+/*Desktops, large screens*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    height: 580px;
+  }
+}
+
+/*Small screens, laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    height: 580px;
+  }
+}
+
+/*iPads, Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    height: 580px;
+    width: 480px;
+  }
+  .container .background {
+    display: none;
+  }
+}
+
+/*Mobile devices*/
+@media (min-width: 321px) and (max-width: 480px) {
+  .container {
+    height: 580px;
+    width: 400px;
+  }
+  .header {
+    margin-top: 25px;
+    margin-left: 50%;
+    margin-bottom: 25px;
+  }
+  .header img {
+    height: 60px;
+    width: 60px;
+  }
+  .form1 {
+    transform: translate(-70px, -12px);
+  }
+  .form2 {
+    transform: translate(85px, -50px);
+  }
+  #eye1 {
+    left: 290px;
+  }
+  #eye2 {
+    left: 290px;
+  }
+  .container .background {
+    display: none;
+  }
+  .form-control input {
+    width: 330px;
+  }
+  .form2 .logoURL input {
+    width: 330px;
+  }
+  .drop-down {
+    max-width: 160px;
+    width: 160px;
+  }
+  .checkbox {
+    transform: translate(60px, 70px);
+  }
+  #btn-next {
+    font-size: 1.1rem;
+    transform: translateX(270px);
+  }
+  .form2 .btn-page {
+    font-size: 1.1rem;
+    transform: translate(-70px, 80px);
+  }
+  .form .register {
+    font-size: 12px;
+    padding: 10px;
+    width: 30%;
+  }
+  .form .accountBtn {
+    font-size: 12px;
+    padding: 10px;
+    width: 30%;
+  }
+  .form .button {
+    transform: translate(40px, -80px);
+  }
+}
+
+/* Extrasmall mobile devices*/
+@media (min-width: 120px) and (max-width: 320px) {
+  .container {
+    height: 570px;
+    width: 380px;
+  }
+  .header {
+    margin-top: 25px;
+    margin-left: 48%;
+    margin-bottom: 25px;
+  }
+  .header img {
+    height: 55px;
+    width: 55px;
+  }
+  .form1 {
+    width: 330px;
+    transform: translate(-90px, -12px);
+  }
+  .form2 {
+    transform: translate(65px, -50px);
+  }
+  #eye1 {
+    left: 230px;
+  }
+  #eye2 {
+    left: 230px;
+  }
+  .container .background {
+    display: none;
+  }
+  .form-control input {
+    width: 265px;
+  }
+  .form2 .logoURL input {
+    width: 270px;
+  }
+  .drop-down {
+    max-width: 130px;
+    width: 130px;
+  }
+  .checkbox {
+    transform: translate(35px, 70px);
+  }
+  #btn-next {
+    font-size: 1rem;
+    transform: translateX(210px);
+  }
+  .form2 .btn-page {
+    transform: translate(-138px, 80px);
+  }
+  .form .btn-next {
+    font-size: 1rem;
+  }
+  .form .register {
+    font-size: 12px;
+    padding: 10px;
+    width: 30%;
+  }
+  .form .accountBtn {
+    font-size: 12px;
+    padding: 10px;
+    width: 30%;
+  }
+  .form .button {
+    transform: translate(10px, -80px);
+  }
+}
