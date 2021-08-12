@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Partner Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="side-header">
+                <span>Welcome!</span>
+                <h1>Community Partner</h1>
+                <p>Already have an account?</p>
+                <button id="sign-in">Sign in</button>
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Create Account</h2>
+                <img src="images/logo-circle.png" alt="trashcash-logo">
+            </div>
+            <!--1st page-->
+            <form class="form" id="form" action="/">
+
+                <div class="form1">
+                    <div class="form-control">
+                        <p>Representative name</p>
+                        <input type="text" placeholder="Representative name" id="representative">
+                    </div>
+
+                    <div class="form-control">
+                        <p>Organization name</p>
+                        <input type="text" placeholder="Organization name" id="organization">
+                    </div>
+
+                    <div class="form-control">
+                        <p>Contact number</p>
+                        <input type="text" placeholder="Contact number" id="contact">
+                    </div>
+
+                    <div class="form-control">
+                        <p>Email</p>
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+
+                    <div class="form-control">
+                        <p>Password</p>
+                        <input type="password" placeholder="Password" id="password1">
+                        <i class="fa fa-eye" class="eye" id="eye1" onclick="toggleOne()"></i>
+                    </div>
+
+                    <div class="form-control">
+                        <p>Confirm password</p>
+                        <input type="password" placeholder="Confirm password" id="password2">
+                        <i class="fa fa-eye" class="eye" id="eye2" onclick="toggleTwo()"></i>
+                    </div>
+
+                    <div class="btn-page">
+                        <button type="button" class="btn-next" id="btn-next">
+                            1/2<i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--end-->
+                <!--2nd page-->
+                <div class="form2">
+                    <div class="address">
+                        <div class="field">
+                            <p>Region</p>
+                            <select id="region" class="drop-down">
+                                <option value="0">Select region</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <p>Province</p>
+                            <select id="province" class="drop-down">
+                                <option value="0">Select Province</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="field">
+                            <p>City</p>
+                            <select id="city" class="drop-down">
+                                <option value="0">Select city</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <p>Barangay</p>
+                            <select id="barangay" class="drop-down">
+                                <option value="0">Select barangay</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="logoURL">
+                        <p>Facebook Page URL</p>
+                        <input type="text" placeholder="Optional" id="facebook">
+                        <p>Organization logo</p>
+                        <input type="file" id="file" class="file">
+                    </div>
+
+                    <div class="button">
+                        <button class="register" type="submit" id="register-btn">Register</button>
+                        <button class="accountBtn" id="account-btn">I have an account</button>
+                    </div>
+
+                    <div class="btn-page">
+                        <button type="button" class="btn-next" id="btn-back">
+                            <i class="fa fa-arrow-left"></i>2/2
+                        </button>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" required>
+                        <label>I agree to the <a href="" target="_blank">Terms and Conditions</a></label>
+                    </div>
+                </div>
+            </form>
+            <!--end-->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
